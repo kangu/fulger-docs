@@ -28,3 +28,9 @@ it's tracked for git static deployment.
 ### Deployment
 
 The `dist/git` folder is the root of the static website that can be served from any hosting provider.
+
+On the first build, the `dist` folder needs to be initialized at a git repository by running
+the `npm run dist-init` command, then running `git init` inside the `dist` folder.
+
+Be careful not to initialize the repository under `dist/git` since that folder will always
+be fully overwritten with the build output.

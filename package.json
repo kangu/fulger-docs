@@ -5,6 +5,7 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
+    "init-dist": "mkdir dist && mkdir dist/git",
     "build": "docusaurus build && rm -rf dist/git && mv build dist/git",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
