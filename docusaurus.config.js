@@ -63,7 +63,7 @@ const config = {
       navbar: {
         title: 'Fulger',
         logo: {
-          alt: 'ZapPay Logo',
+          alt: 'Fulger Logo',
           src: 'img/fulger-logo.png',
         },
         items: [
@@ -107,7 +107,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/kangu/fulger-docs',
               },
             ],
           },
