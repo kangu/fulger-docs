@@ -144,6 +144,26 @@ RATES_DOC=rate:10kSATS
 SETTINGS_DOC=settings
 ```
 
+#### Lightning node settings
+
+You need to configure the `LND_ENDPOINT` and `LND_MAC` values.
+
+You can obtain the values from the Lightning Node application from Umbrel by clicking
+on the three dots from the top right corner, and copying the host and the port.
+
+![lnd settings](/img/lnd-settings.png)
+
+The final settings would look something like this:
+```bash
+LND_ENDPOINT=il2aq5lutd5gj6rj2nb75brjqqygrfka4mu2tm7kwuldid.onion:8080
+```
+
+Then, copy the Macaroon value to have the .env entry like:
+
+```bash
+LND_MAC=656e6572617465120472656...very_long_string
+```
+
 ### Bootstrap CouchDB database
 
 Upload the interfaces couchapp by running the `install/install_couchapps.sh` script.
