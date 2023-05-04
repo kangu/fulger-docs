@@ -112,11 +112,6 @@ related to the operation of the entire system.
 A sample file is shipped with each installation at `.env.example` and contains
 the following settings.
 
-For the `COUCH_PASS` field, you need the Basic Authentication header value combined
-from the username and password setup on the CouchDB install. You can use the website at
-https://www.blitter.se/utils/basic-authentication-header-generator/ to generate the value
-(only copy the text after `Basic`).
-
 ```bash
 # Copy this file to .env and fill in the variables with your values.
 
@@ -144,6 +139,34 @@ RATES_DOC=rate:10kSATS
 SETTINGS_DOC=settings
 ```
 
+#### SERVER_PORT
+
+Port on which the NodeJS/Hapi server is running for API access.
+
+#### COUCH
+
+Root host for CouchDB instance. It's usually `http://localhost:5984` when running on the
+local machine, but it can be setup to use an external instance as well.
+
+#### COUCH_PASS
+
+You need the Basic Authentication header value combined from the username and password setup on the CouchDB install.
+
+Type the following in a terminal:
+
+```bash
+echo -n 'username:password' | base64
+```
+
+#### PLUGINS
+
+Comma separated list of files from `src/plugins` which are processing the order document and provide
+additional data on the document before saving.
+
+Currently, the options are:
+* `ln_invoice` - handles everything related to generating a proper LND invoice
+* `email` - provides fields needed for the email sending service to pick up on
+
 #### Lightning node settings
 
 You need to configure the `LND_ENDPOINT` and `LND_MAC` values.
@@ -167,6 +190,8 @@ LND_MAC=656e6572617465120472656...very_long_string
 ### Bootstrap CouchDB database
 
 Upload the interfaces couchapp by running the `install/install_couchapps.sh` script.
+The scripts will use settings from the `.env` file so make sure you have that
+configured properly.
 
 ```bash
 node ../couchapps/default_docs.js
@@ -225,6 +250,16 @@ api.my-domain.com {
 	reverse_proxy 127.0.0.1:9994 {
 		header_up X-Real-IP {remote_host}
 	}
+}
+```
+
+If you want to integrate the API just behind a route on your existing website configuration,
+use the following config:
+
+```
+route /fulger/* {
+    uri strip_prefix /fulger
+    reverse_proxy localhost:9994
 }
 ```
 

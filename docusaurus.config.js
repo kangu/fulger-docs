@@ -68,14 +68,7 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          // {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/kangu/fulger-docs',
             label: 'GitHub',
             position: 'right',
           },
@@ -96,6 +89,14 @@ const config = {
           {
             title: 'Community',
             items: [
+              {
+                label: 'NOSTR',
+                href: 'https://twitter.com/docusaurus',
+              },
+              {
+                label: 'Stacker News',
+                href: 'https://twitter.com/docusaurus',
+              },
               {
                 label: 'Twitter',
                 href: 'https://twitter.com/docusaurus',
