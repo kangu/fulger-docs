@@ -32,7 +32,7 @@ The bitcoin node is only available on the local network where it's running, the 
 to a public website is through a connection to the CouchDB system that acts as a message and
 data transmission engine.
 
-Follow the [full installation guide](./docs) for more details.
+Follow the [full installation guide](./install) for more details.
 
 ## Why should I care or use this?
 
