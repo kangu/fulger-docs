@@ -1,6 +1,25 @@
 # Fulger Documentation
 
+### Why Bitcoin? Because it's inclusive
+
+Bitcoin is just math and technology put together. It practically works for everyone, independent
+of gender, race, age, anything. It's a tool for empowering people with economic freedom and
+trade across all physical barriers, allowing for secure value transfer and storage across
+the globe.
+
 ### Tools for a self-sovereign stack
+
+Owning and working with bitcoin is all about self-sovereignty at its core. Although running
+the tools can be sometimes hard, the end goal and initial vision is to be a full participant in the
+system. No matter how much benefits and ease of use a third party can provide, in the end
+it's just yet another third party, a dependency in a sense. The true wonder of the bitcoin
+system is that it was designed to run literally *anywhere* and by anyone, which is one of the core unique
+propositions that bitcoin has over any other projects that appeared downstream from it.
+
+It's become increasingly easier to run nodes and infrastructure with projects like umbrel
+where it's practically plug and play. And then operating it brings indeed some challenges,
+but it's not really that impossibly hard. If some of us managed to get a hang of it we can
+teach it as well to other around us.
 
 This documentation repository acts as a guide to handling a set of tools that will
 allow you to claim your self-sovereignty in the digital space.
@@ -11,8 +30,6 @@ The stack is composed of:
 * Lightning Network server
 * CouchDB database
 * NodeJS
-
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 ### Installation
 
@@ -25,7 +42,7 @@ The bitcoin node is only available on the local network where it's running, the 
 to a public website is through a connection to the CouchDB system that acts as a message and
 data transmission engine.
 
-Follow the [full installation guide](/docs/install) for more details.
+Follow the [full installation guide](./install) for more details.
 
 ## Why should I care or use this?
 
@@ -55,7 +72,7 @@ ecosystem.
 ## Support us
 
 We could use some extra sats you are willing to share with us, is helps pay the bills and
-keep things going. We have setup a demo site for donations at support-fulger.kangu.ro will
+keep things going. We have setup a demo site for donations at [support-fulger.kangu.ro](https://support-fulger.kangu.ro/) will
 all the sources published on this repository that you can grab and run of modify as your own.
 
 ## Feedback is welcomed
