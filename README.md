@@ -42,7 +42,7 @@ The bitcoin node is only available on the local network where it's running, the 
 to a public website is through a connection to the CouchDB system that acts as a message and
 data transmission engine.
 
-Follow the [full installation guide](./install) for more details.
+Follow the [full installation guide](https://fulger.kangu.ro/docs/install) for more details.
 
 ## Why should I care or use this?
 
@@ -92,8 +92,11 @@ See the CONTRIBUTIONS document for details on how to actively participate.
 
 ## Demo implementation
 
-A demo system for simple tipping is running on [my own personal website](https://radustanciu.ro#contact), with the corresponding
+A demo system for simple tipping is running on [support-fulger.kangu.ro](https://support-fulger.kangu.ro/), with the corresponding
 [repository source here](https://github.com/kangu/demo-personal-site).
 
-Further demos are planned for micro-transactions and a more commerce-oriented shop. You can
-support development by [tipping us some sats through the demo implementation](https://radustanciu.ro#contact) or directly at radu@getalby.com.
+A professional's booking system for meetings and mentorship is running on [radustanciu.ro](https://radustanciu.ro#contact)
+where you can schedule a meeting with someone by paying some sats straight away.
+
+Further demos are planned for micro-transactions more traditional shops. You can
+support development by [tipping us some sats through the demo implementation](https://support-fulger.kangu.ro/).
