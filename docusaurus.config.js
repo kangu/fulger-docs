@@ -107,7 +107,11 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'GitHub',
+                label: 'Main GitHub repo',
+                href: 'https://github.com/kangu/fulger',
+              },
+              {
+                label: 'Sources for this website',
                 href: 'https://github.com/kangu/fulger-docs',
               },
             ],

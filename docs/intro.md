@@ -9,18 +9,20 @@ sidebar_position: 1
 
 ### Why Bitcoin? Because it's inclusive
 
-Bitcoin is just math and technology put together. It practically works for everyone, independent
-of gender, race, age, anything. It's a tool for empowering people with economic freedom and
+Bitcoin at is core is just math and computational technology put together. This means that out of the box it works for everyone, independent
+of gender, race, age, anything. It's software eating into the world of finance. It's a tool for empowering people with economic freedom and
 trade across all physical barriers, allowing for secure value transfer and storage across
 the globe.
 
 ### Tools for a self-sovereign stack
 
-Owning and working with bitcoin is all about self-sovereignty at its core. Although running
-the tools can be sometimes hard, the end goal and initial vision is to be a full participant in the
-system. No matter how much benefits and ease of use a third party can provide, in the end
+Owning and working with bitcoin is all about self-sovereignty at its [core](https://bitcoin.org/bitcoin.pdf). Although running
+the tools can be challenging, the end goal of the initial vision is to be a full participant in the
+system. 
+
+No matter how much benefits and ease of use a third party can provide (LSP providers like [Voltage](https://voltage.cloud/) popping up all around), in the end
 it's just yet another third party, a dependency in a sense. The true wonder of the bitcoin
-system is that it was designed to run literally *anywhere* and by anyone, which is one of the core unique
+system is that it was designed to run literally *anywhere* and by anyone, on your own hardware, which is one of the core unique
 propositions that bitcoin has over any other projects that appeared downstream from it.
 
 It's become increasingly easier to run nodes and infrastructure with projects like umbrel
@@ -42,7 +44,7 @@ The stack is composed of:
 
 You could have all services running on a single machine, but for practical reasons things
 should be separated like so:
-* Bitcoin + Lightning nodes running on their own dedicated machine, over Tor for increased security.
+* Bitcoin + Lightning nodes running on their own dedicated machine, most conveniently through tools like [Umbrel](https://umbrel.com)
 * CouchDB + NodeJS running on a publicly available host
 
 The bitcoin node is only available on the local network where it's running, the only connection
@@ -51,29 +53,33 @@ data transmission engine.
 
 Follow the [full installation guide](./install) for more details.
 
-## Why should I care or use this?
+## Why should I use any of this stuff?
 
 It's about owning your stack, having control over its components and moving parts.
-Yes there are BTC Pay Server, ZapRite, LitePay, ldk, etc..., but with them you have yet another
-dependency.
+Yes there are some projects like [BTC Pay Server](https://btcpayserver.org/) or [OpenNode](https://www.opennode.com/),
+which abstract away more or less things, there's also a growing market for lightning as a service,
+but we feel there's value in sticking to the core stack and providing minimal yet good
+functional value on top of it.
 
-The direction is which this project is going is to provide developers with a minimal
-functioning btc+lightning bridge, and besides that stay out of the way and never crash.
+The direction is which this project is going is to provide developers with a functioning 
+btc+lightning bridge on various scenarios, but besides that stay out of the way, plus never crash.
 
 ## Target audience
 
-For a better bitcoin adoption curve we should all target tools, products and services to specific
+For a better bitcoin adoption rate we should target tools, products and services to specific
 niches of people. This particular set of tools is aimed at software developer professionals
-(and amateurs alike) who can manage a website for them or for clients and want to have an
-easy to use and reliable toolset for handling all sorts of evolving stuff in the lightning
-ecosystem.
+(and amateurs alike) who can manage a website for them and/or for clients/friends and want to have an
+easy to use, understandable and reliable toolset for navigating the lightning ecosystem.
 
 ## Features coming up
 
-* support for micro-transactions
-* templates for small shops and entrepreneur small services
-* themed qr code
-* backend for products
+* backend UI
+* support for micro-transactions vision of how you can monetize your own content
+completely on your own terms and infrastructure. it feels like 402 functional vision is
+more possible than ever with tools like [Alby](https://getalby.com)
+* templates for small shops and entrepreneur small services like online consulting and
+mentoring
+* themed qr codes would be eye catchy
 * many more hopefully...
 
 ## Support us
@@ -89,7 +95,8 @@ See the CONTRIBUTIONS document for details on how to actively participate.
 ## Demo implementation
 
 A demo system for simple tipping is running on [my own personal website](https://radustanciu.ro#contact), with the corresponding
-[repository source here](https://github.com/kangu/demo-personal-site).
+[repository source here](https://github.com/kangu/demo-personal-site). It's pretty rough at the
+moment and more like a proof of concept, but it's being improved upon
 
 Further demos are planned for micro-transactions and a more commerce-oriented shop. You can
 support development by [tipping us some sats through the demo implementation](https://radustanciu.ro#contact) or directly at radu@getalby.com.
