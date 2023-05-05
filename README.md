@@ -55,11 +55,15 @@ functioning btc+lightning bridge, and besides that stay out of the way and never
 
 ## Target audience
 
-For a better bitcoin adoption curve we should all target tools, products and services to specific
-niches of people. This particular set of tools is aimed at software developer professionals
-(and amateurs alike) who can manage a website for them or for clients and want to have an
-easy to use and reliable toolset for handling all sorts of evolving stuff in the lightning
+For a better bitcoin adoption curve we should aim to target specific
+niches of people and crafts. This particular set of tools is aimed at software developer professionals
+(and amateurs alike) who can manage a web server for them or for clients and want to have an
+easy to use and reliable toolset for handling payments in the lightning
 ecosystem.
+
+Small economic actors can be a good target as they have a lot to benefit from the improved
+productivity with transactions, and they have a direct incentive to acquire skills and
+put them to actual use to be able to fully sustain themselves and their business.
 
 ## Features coming up
 
@@ -71,9 +75,16 @@ ecosystem.
 
 ## Support us
 
-We could use some extra sats you are willing to share with us, is helps pay the bills and
-keep things going. We have setup a demo site for donations at [support-fulger.kangu.ro](https://support-fulger.kangu.ro/) will
-all the sources published on this repository that you can grab and run of modify as your own.
+We believe it making something great for yourself and them giving it away for free to people
+to make use of and even build upon. We hope to reach a point where we're able to fully commit
+to working on bitcoin and putting our skills to use in this space, but we're not quite
+there yet.
+
+We only accept transactions in sats and we'll be forever greatful for anyone supporting us in this journey. 
+
+We have setup a demo site for donations at [support-fulger.kangu.ro](https://support-fulger.kangu.ro/) that is
+one of our design visions for a minimalist personal donation or tipping website. Fork it
+from the repository, update the settings then use it for yourself.
 
 ## Feedback is welcomed
 
