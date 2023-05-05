@@ -113,7 +113,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Kangu Studio, Inc. Built with Docusaurus.`,
+        copyright: `❤️ ${new Date().getFullYear()} Kangu Studio`,
       },
       prism: {
         theme: lightCodeTheme,
