@@ -7,7 +7,9 @@ sidebar_position: 1
 
 # Hello world!
 
-### Why Bitcoin? Because it's inclusive
+### Why Bitcoin?
+
+Primarily because it works well and it's inclusive.
 
 Bitcoin at is core is just math and computational technology put together. This means that out of the box it works for everyone, independent
 of gender, race, age, anything. It's software eating into the world of finance. It's a tool for empowering people with economic freedom and
@@ -18,7 +20,7 @@ the globe.
 
 Owning and working with bitcoin is all about self-sovereignty at its [core](https://bitcoin.org/bitcoin.pdf). Although running
 the tools can be challenging, the end goal of the initial vision is to be a full participant in the
-system. 
+system.
 
 No matter how much benefits and ease of use a third party can provide (LSP providers like [Voltage](https://voltage.cloud/) popping up all around), in the end
 it's just yet another third party, a dependency in a sense. The true wonder of the bitcoin
@@ -35,10 +37,28 @@ allow you to claim your self-sovereignty in the digital space.
 
 The stack is composed of:
 
-* Bitcoin server
-* Lightning Network server
-* CouchDB database
-* NodeJS
+* [Bitcoin Core](https://github.com/bitcoin/bitcoin)
+* [Lightning Network Daemon](https://github.com/lightningnetwork/lnd)
+* [CouchDB database](https://github.com/apache/couchdb)
+* [NodeJS](https://github.com/nodejs/node)
+
+Rationale for picking the tools:
+
+* CouchDB is based on the rock-solid Erlang VM and provides great performance and uptime,
+  plus it's natively over HTTP and has a built-in replication system and protocol which could
+  open up many interesting use cases for people syncing data between their devices completely
+  peer to peer.
+* NodeJS is solid and well proven for over a while now in production systems. The main appeal
+  of using it is to have a common language for the backend, database, and also obviously on
+  the frontend itself, that being javascript. The backend can be built in something
+  more powerful and modern like [Rust](https://www.rust-lang.org/), [Elixir](https://elixir-lang.org/) or [Go](https://go.dev/) and you have a solid foundation,
+  but that one-language advantage for maintenance is lost. The code is running
+  under different engines and runtimes, so you can't always run the same code identical everywhere,
+  but the core logic can be all encapsulated through javascript. Like it was foretold
+  by Jeff Atwood in 2007 :)
+* LND is currently the most popular lightning implementation. technically the API usage should
+  be similar with other implementation, so it can be swapped for something
+  like [Core Lightning](https://github.com/ElementsProject/lightning) or [Eclair](https://github.com/ACINQ/eclair)
 
 ### Installation
 
@@ -57,11 +77,13 @@ Follow the [full installation guide](./install) for more details.
 
 It's about owning your stack, having control over its components and moving parts.
 Yes there are some projects like [BTC Pay Server](https://btcpayserver.org/) or [OpenNode](https://www.opennode.com/),
-which abstract away more or less things, there's also a growing market for lightning as a service,
+which abstract away more or less things but they tend to get heavy and be an ever-changing
+thing not really under your control. There's also a growing market for lightning as a service
+which abstract away the need for channel management and balancing, which is great
 but we feel there's value in sticking to the core stack and providing minimal yet good
 functional value on top of it.
 
-The direction is which this project is going is to provide developers with a functioning 
+The direction is which this project is going is to provide developers with a functioning
 btc+lightning bridge on various scenarios, but besides that stay out of the way, plus never crash.
 
 ## Target audience
@@ -75,10 +97,10 @@ easy to use, understandable and reliable toolset for navigating the lightning ec
 
 * backend UI
 * support for micro-transactions vision of how you can monetize your own content
-completely on your own terms and infrastructure. it feels like 402 functional vision is
-more possible than ever with tools like [Alby](https://getalby.com)
+  completely on your own terms and infrastructure. it feels like 402 functional vision is
+  more possible than ever with tools like [Alby](https://getalby.com)
 * templates for small shops and entrepreneur small services like online consulting and
-mentoring
+  mentoring
 * themed qr codes would be eye catchy
 * many more hopefully...
 
@@ -94,9 +116,9 @@ See the CONTRIBUTIONS document for details on how to actively participate.
 
 ## Demo implementation
 
-A demo system for simple tipping is running on [my own personal website](https://radustanciu.ro#contact), with the corresponding
-[repository source here](https://github.com/kangu/demo-personal-site). It's pretty rough at the
+A demo system for simple tipping is running on [support-fulger.kangu.ro](https://support-fulger.kangu.ro), with the corresponding
+[repository source here](https://github.com/kangu/fulger-demo-donation). It's pretty rough at the
 moment and more like a proof of concept, but it's being improved upon
 
 Further demos are planned for micro-transactions and a more commerce-oriented shop. You can
-support development by [tipping us some sats through the demo implementation](https://radustanciu.ro#contact) or directly at radu@getalby.com.
+support development by [tipping us some sats through the demo implementation](https://support-fulger.kangu.ro/).

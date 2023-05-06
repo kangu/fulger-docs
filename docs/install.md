@@ -2,6 +2,7 @@
 # Display h2 to h5 headings
 toc_min_heading_level: 2
 toc_max_heading_level: 5
+sidebar_position: 4
 ---
 
 # Installation

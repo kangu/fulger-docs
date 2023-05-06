@@ -13,7 +13,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Focus on what matters',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
@@ -22,7 +22,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Powered by open-source',
+    title: 'Open-source is powerful',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>

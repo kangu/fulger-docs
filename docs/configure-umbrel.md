@@ -1,6 +1,6 @@
 ---
-sidebar_label: 'Configure Umbrel'
-#sidebar_position: 2
+sidebar_label: 'Setup your Umbrel'
+sidebar_position: 2
 ---
 
 # Why a full node?

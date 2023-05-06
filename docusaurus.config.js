@@ -91,15 +91,15 @@ const config = {
             items: [
               {
                 label: 'NOSTR',
-                href: 'https://twitter.com/docusaurus',
+                href: '/',
               },
               {
                 label: 'Stacker News',
-                href: 'https://twitter.com/docusaurus',
+                href: '/',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: '/',
               },
             ],
           },
